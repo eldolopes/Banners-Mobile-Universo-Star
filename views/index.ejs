@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banners Mobile Univers Star</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastro de Banners Mobile</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th class="source-link">Link do Destino</th>
+            <th class="file-name">Nome do Arquivo</th>
+            <th class="type-file">Formato do Arquivo</th>
+            <th class="action">Editar</th>
+            <th class="action">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="banner-link">Link do Destino</label>
+          <input id="banner-link" type="text" />
+  
+          <label for="banner-name">Nome do Arquivo</label>
+          <input id="banner-name" type="text" />
+  
+          <div class="col-auto">
+            <label for="banner-type">Formato do Arquivo</label>
+            <select id="banner-type">
+              <option value="jpg">JPG</option>
+              <option value="png">PNG</option>
+              <option value="gif">GIF</option>
+            </select>
+          </div>
+          <button id="btnSave">Salvar</button>
+          <button id="btnClose"">Cancelar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
